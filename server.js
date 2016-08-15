@@ -21,12 +21,12 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: 'application/vnd.api+json'}));
 
 //displaying data from the home.html file
-app.get('/app', function(reckor,resin){
+app.get('/', function(reckor,resin){
 	resin.sendfile(path.join(__dirname, './app/products/html/index.html'));
 });
 
 //lets the server recognize the js files
-app.use('/static', express.static('app/products'));
+app.use('/static', express.static('./app/products'));
 
 //starts the server with the listening queue
 app.listen(PORT, function(){
