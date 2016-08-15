@@ -25,7 +25,6 @@ app.get('/', function(reckor,resin){
 	resin.sendfile(path.join(__dirname, 'app/products/html/index.html'));
 });
 
-// app.use('/parse', api);
 //lets the server recognize the js files
 app.use('/static', express.static('app/products'));
 
