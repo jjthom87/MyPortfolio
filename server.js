@@ -22,7 +22,7 @@ app.use(bodyParser.json({ type: 'application/vnd.api+json'}));
 
 //displaying data from the home.html file
 app.get('/', function(reckor,resin){
-	resin.sendfile(path.join(__dirname, './app/products/html/index.html'));
+	resin.sendfile(path.join(__dirname, './app/products/HTML/index.html'));
 });
 
 //lets the server recognize the js files
