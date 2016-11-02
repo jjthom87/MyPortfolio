@@ -50,6 +50,8 @@ h1,h2,h3,h4,h5,h6{
 .borders{
 	border-style: solid;
 	border-width: 2px;
+	height: 600px;
+	width: 800px;
 }
 
 #main-content{
